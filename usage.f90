@@ -1,0 +1,15 @@
+subroutine usage
+   write(*,*)'Usage: do_pcc param.dat '
+   write(*,*)'param.dat is like: (where [] is 0 or 1)'
+   write(*,*)'station_list: ---------------(netwrok station)'
+   write(*,*)'year_b,day_b,year_e,day_e----(year_begin, day_begin, year_end, day_end)'
+   write(*,*)'dsec, multp, npt2------------(data length in segments, overlaping percentage)'
+   write(*,*)'ncom,component,do_crs--------(number of component, component, [do cross term])'
+   write(*,*)'f1,f2, do_filter,donorm------(corner frequency f1, f2, [do filter],[do normalization])'
+   write(*,*)'dopcc,do_whiten--------------([do pcc], [do whittening])'
+   write(*,*)'do_water,c-------------------([do water level normalization],minimum value) '
+   write(*,*)'do_agc,t_agc-----------------([do Automatic gain control (AGC)], time window)'
+   write(*,*)'t1 npts----------------------(begin time, number of samples)'
+   write(*,*)'/inputdir/-------------------(SAC data directory)'
+   write(*,*)'/outputdir/------------------(Output data directory)'
+end subroutine
